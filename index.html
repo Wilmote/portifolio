@@ -3,9 +3,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Muhanuzi Jansen - Web Developer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
+<style>
+    /* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0 0;
+    font-size: 1.2em;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 20px auto;
+}
+
+/* Sections */
+section {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 900px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section h2 {
+    margin-top: 0;
+    font-size: 2em;
+    color: #333;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    background: #f4f4f4;
+    margin: 5px 0;
+    padding: 10px;
+    border-left: 4px solid #333;
+}
+
+/* Contact Section */
+#contact a {
+    color: #333;
+    text-decoration: none;
+}
+
+#contact a:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
+</style>
 <body>
-    
+    <header>
+        <h1>Muhanuzi Jansen</h1>
+        <p>Web Developer & Tech Enthusiast</p>
+    </header>
+
+    <section id="bio">
+        <img src="images/Jansen.jpg" alt="Muhanuzi Jansen" class="profile-pic">
+        <p>
+            Highly motivated and detail-oriented web developer with a passion for building innovative and user-friendly digital solutions. Proficient in a range of programming languages, including HTML, CSS, JavaScript, and server-side languages like PHP and Ruby. Experienced in frameworks like React, Angular, and Vue.js, with a strong understanding of database management systems and version control tools like Git.
+        </p>
+        <p>
+            When I'm not coding, you can find me exploring new technologies, reading about industry trends, or collaborating with fellow developers on exciting projects. I'm always looking for opportunities to grow and learn, and I'm excited to bring my skills and enthusiasm to a dynamic team.
+        </p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>PHP, Ruby</li>
+            <li>React, Angular, Vue.js</li>
+            <li>Database Management (MySQL, MongoDB, PostgreSQL)</li>
+            <li>Version Control (Git, GitHub)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li>Personal Portfolio Website: Built with React, CSS Grid, and a touch of minimalism.</li>
+            <li>E-commerce Platform: Built with Angular, Node.js, and MongoDB.</li>
+            <li>Blog Website: Powered by WordPress with a custom theme.</li>
+            <li>To-Do List App: Task management tool built with Vue.js.</li>
+            <li>Landing Page: Single-page website for a startup.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:wilmotejansen@gmail.com">wilmotejansen@gmail.com</a></p>
+        <p>Phone: +256763333193</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Muhanuzi Jansen. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript Example: Alert when the page loads
+        window.onload = function() {
+            alert('Welcome to my portfolio!');
+        }
+
+        // JavaScript Example: Change header background color on click
+        document.querySelector('header').onclick = function() {
+            this.style.backgroundColor = '#555';
+        }
+    </script>
 </body>
 </html>
