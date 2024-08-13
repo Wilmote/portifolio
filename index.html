@@ -6,122 +6,152 @@
     <title>Muhanuzi Jansen - Web Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-
 <style>
     /* General Styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-}
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+        line-height: 1.6;
+    }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
-}
+    /* Sticky Header */
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 20px 0;
+        text-align: center;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
+    header h1 {
+        margin: 10px 0 0;
+        font-size: 2.5em;
+    }
 
-header p {
-    margin: 5px 0 0;
-    font-size: 1.2em;
-}
+    header p {
+        margin: 5px 0 0;
+        font-size: 1.2em;
+    }
 
-/* Profile Picture */
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 20px auto;
-}
+    /* Profile Picture in Header */
+    .profile-pic {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin: 0 auto 10px;
+        display: block;
+    }
 
-/* Sections */
-section {
-    padding: 20px;
-    background: #fff;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 900px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
+    /* Sections */
+    section {
+        padding: 20px;
+        background: #fff;
+        margin: 20px auto;
+        width: 80%;
+        max-width: 900px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 
-section h2 {
-    margin-top: 0;
-    font-size: 2em;
-    color: #333;
-}
+    section h2 {
+        margin-top: 0;
+        font-size: 2em;
+        color: #333;
+    }
 
-section ul {
+    section ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    section ul li {
+        background: #f4f4f4;
+        margin: 5px 0;
+        padding: 10px;
+        border-left: 4px solid #333;
+    }
+
+    /* Contact Section */
+    #contact a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    #contact a:hover {
+        text-decoration: underline;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 10px 0;
+        background-color: #333;
+        color: #fff;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+    }
+
+    footer p {
+        margin: 0;
+        font-size: 0.9em;
+    }
+    /* Feedback Section */
+#feedback ul {
     list-style: none;
     padding: 0;
 }
 
-section ul li {
-    background: #f4f4f4;
-    margin: 5px 0;
-    padding: 10px;
-    border-left: 4px solid #333;
+#feedback ul li {
+    background: #f9f9f9;
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #333;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Contact Section */
-#contact a {
-    color: #333;
-    text-decoration: none;
+#feedback p {
+    font-style: italic;
 }
 
-#contact a:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: #fff;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9em;
-}
 
 </style>
 <body>
     <header>
+        <img src="images/Jansen.jpg" alt="Muhanuzi Jansen" class="profile-pic">
         <h1>Muhanuzi Jansen</h1>
         <p>Web Developer & Tech Enthusiast</p>
     </header>
 
     <section id="bio">
-        <img src="images/Jansen.jpg" alt="Muhanuzi Jansen" class="profile-pic">
         <p>
-            Highly motivated and detail-oriented web developer with a passion for building innovative and user-friendly digital solutions. Proficient in a range of programming languages, including HTML, CSS, JavaScript, and server-side languages like PHP and Ruby. Experienced in frameworks like React, Angular, and Vue.js, with a strong understanding of database management systems and version control tools like Git.
+            I am a Fullstack web developer with 2+ years of experience in Laravel in the backend and Vue js in the front end.
         </p>
         <p>
-            When I'm not coding, you can find me exploring new technologies, reading about industry trends, or collaborating with fellow developers on exciting projects. I'm always looking for opportunities to grow and learn, and I'm excited to bring my skills and enthusiasm to a dynamic team.
+            I am writing clean, testable, secure, and dynamic codes based on standard web development best practices.
         </p>
     </section>
 
     <section id="skills">
         <h2>Skills</h2>
         <ul>
-            <li>HTML, CSS, JavaScript</li>
-            <li>PHP, Ruby</li>
-            <li>React, Angular, Vue.js</li>
-            <li>Database Management (MySQL, MongoDB, PostgreSQL)</li>
-            <li>Version Control (Git, GitHub)</li>
+            <li>Languages: Javascript ES6, Typescript, Python, Dart, R</li>
+            <li>Library: ReactJS, PWA, NextJS (SSR, SSG, ISR), Redux, jQuery</li>
+            <li>Technologies: CSS3, HTML5, SASS/SCSS, LESS, styled-components</li>
+            <li>CSS frameworks: Tailwind CSS, Material UI, Bootstrap</li>
+            <li>VAPI: GraphQL, REST</li>
+            <li>Webpack, Git, TDD, unit testing</li>
+            <li>Databases: MySQL, Redis, MongoDB</li>
+            <li>Other Tech: JWT, AWS, Firebase, Gulp</li>
+            <li>Good understanding of XSS and security</li>
+            <li>Great understanding of UX and UI, SEO practices</li>
         </ul>
     </section>
 
@@ -136,10 +166,26 @@ footer p {
         </ul>
     </section>
 
+    
+    <section id="feedback">
+        <h2>Client Feedback</h2>
+        <ul>
+            <li>
+                <p>“Jansen is a highly-skilled professional with excellent attention to detail. He was very organized, took ownership of the project, and was able to think through and solve problems independently. Highly recommended +++++”</p>
+            </li>
+            <li>
+                <p>“I've worked with jansen for almost a year. He looked after the implementation of our designs on our WordPress website. We run a conference for digital marketers, so the quality of our work has to be high. Muhanuzi delivered that quality of work. He was also proactive in making sure we covered all our bases. He was very cooperative and easy to communicate with. I highly recommend him.”</p>
+            </li>
+            <li>
+                <p>“I hesitate to give feedback because I don't want to share “Jansen However, he is by far the best developer that I have ever worked with. From day one, I had a burden lifted from my shoulders because I knew that I could trust him to complete the job in an outstanding manner. Not only is he extremely flexible, but he would often suggest little improvements that made the whole project much better than I had initially planned.”</p>
+            </li>
+        </ul>
+        <p>If you are looking for a WordPress expert or developing a website, look no further. He is one click away!</p>
+    </section>
     <section id="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:wilmotejansen@gmail.com">wilmotejansen@gmail.com</a></p>
-        <p>Phone: +256763333193</p>
+        <p>Phone: +256763333193/+256706142758</p>
     </section>
 
     <footer>
@@ -149,7 +195,7 @@ footer p {
     <script>
         // JavaScript Example: Alert when the page loads
         window.onload = function() {
-            alert('Welcome to my portfolio!');
+            
         }
 
         // JavaScript Example: Change header background color on click
